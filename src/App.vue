@@ -1,15 +1,15 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue';
 import AppTitle from './components/AppTitle.vue';
 import Jumbotron from './components/Jumbotron.vue';
 
-export default (await import('vue')).defineComponent({
+export default {
     components: {
       HelloWorld,
       AppTitle,
       Jumbotron
     }
-})
+}
 </script>
 
 <template>
