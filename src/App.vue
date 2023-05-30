@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue';
 import AppTitle from './components/AppTitle.vue';
 import Jumbotron from './components/Jumbotron.vue';
 
+
 export default {
     components: {
       HelloWorld,
@@ -13,6 +14,7 @@ export default {
 </script>
 
 <template>
+  
   <Jumbotron />
   <div>
     <a href="https://vitejs.dev" target="_blank">
