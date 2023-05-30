@@ -1,20 +1,20 @@
-<script setup>
-import { ref } from 'vue'
-
-defineProps({
-  msg: String,
+<script>
+export default (await import('vue')).defineComponent({
+    name: "AppTitle"
+      
+     
 })
 
-const count = ref(0)
 </script>
 
+
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>Hey sono un nuovo titolo!!!</h1>
 
 </template>
 
 <style scoped>
-.read-the-docs {
+h1 {
   color: green;
 }
 </style>

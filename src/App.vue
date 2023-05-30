@@ -1,9 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import AppTitle from './components/AppTitle.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import AppTitle from './components/AppTitle.vue';
+import Jumbotron from './components/Jumbotron.vue';
+
+export default (await import('vue')).defineComponent({
+    components: {
+      HelloWorld,
+      AppTitle,
+      Jumbotron
+    }
+})
 </script>
 
 <template>
+  <Jumbotron />
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -13,7 +23,7 @@ import AppTitle from './components/AppTitle.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <AppTitle msg="Nuovo Titolo AppTittle" />
+  <AppTitle />
 </template>
 
 <style scoped>
